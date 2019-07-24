@@ -1,48 +1,46 @@
-@import "variables.scss";
+@font-face {
+  font-family: "Besom";
+  src:
+    local("Besom by Krisjanis Mezulis / RIT CREATIVE"),
+    local("Besom"),
+    url("../fonts/Besom.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
-@import "base.scss";
+@font-face {
+  font-family: "CoreSansE";
+  src:
+    local("CoreSansE"),
+    url("../fonts/CoreSansE-35Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
 
-@import "visually-hidden.scss";
-@import "border-box.scss";
+@font-face {
+  font-family: "CoreSansE";
+  src:
+    local("CoreSansE"),
+    url("../fonts/CoreSansE-45Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
-@import "blocks/page-header.scss";
-@import "blocks/contacts.scss";
-@import "blocks/logo.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/social.scss";
-@import "blocks/user-actions.scss";
-@import "blocks/cart.scss";
-@import "blocks/page-content.scss";
-@import "blocks/promo.scss";
-@import "blocks/image-slider-controls.scss";
-@import "blocks/new-arrivals.scss";
-@import "blocks/product.scss";
-@import "blocks/show-more.scss";
-@import "blocks/adv-area.scss";
-@import "blocks/adv.scss";
-@import "blocks/best-sales.scss";
-@import "blocks/rating.scss";
-@import "blocks/subscription.scss";
-@import "blocks/email-input.scss";
-@import "blocks/button.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/copyright.scss";
-@import "blocks/footer-menu.scss";
-@import "blocks/payment-info.scss";
+@font-face {
+  font-family: "CoreSansE";
+  src:
+    local("CoreSansE"),
+    url("../fonts/CoreSansE-65Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
 
-// Products-page
+@font-face {
+  font-family: "CoreSansE";
+  src:
+    local("CoreSansE"),
+    url("../fonts/CoreSansE-95Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
 
-@import "blocks/products-page-content.scss";
-@import "blocks/filter.scss";
-@import "blocks/categories-filter.scss";
-@import "blocks/price-filter.scss";
-@import "blocks/slider-bar.scss";
-@import "blocks/sizes-filter.scss";
-@import "blocks/brands-filter.scss";
-@import "blocks/catalogue.scss";
-
-// Full_winter_kit-page
-
-@import "blocks/related-products.scss";
-@import "blocks/single-product.scss";
-@import "blocks/order-button.scss";
