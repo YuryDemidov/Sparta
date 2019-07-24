@@ -1,0 +1,88 @@
+.page-header {
+  width: $mobile-width;
+  max-width: $tablet-width;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-bottom: 142px;
+
+  color: #ffffff;
+
+  background-color: #915960;
+  background-image: url("../img/page-header__background--mobile.jpg");
+
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+    margin-right: auto;
+
+    overflow: hidden;
+  }
+
+  &__phone {
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+
+  &__intro-title {
+    position: relative;
+    left: -65px;
+    width: 100%;
+    margin-top: 45px;
+
+    text-align: center;
+    letter-spacing: 11px;
+
+    background-image: linear-gradient(to left, transparent, transparent 15%, rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.2) 65%, transparent 85%, transparent 100%);
+  }
+
+  &__heading {
+    margin-bottom: 55px;
+  }
+
+  &__time {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 46px;
+  }
+
+  &__days {
+    position: relative;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 205px;
+    height: 40px;
+    padding: 0 10px;
+
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1b1916;
+
+    background-image: url("../img/page-header__days.png");
+    background-repeat: no-repeat;
+  }
+
+  &__time-description {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 76px;
+
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

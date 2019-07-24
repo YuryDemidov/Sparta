@@ -44,3 +44,12 @@
   font-style: normal;
 }
 
+body {
+  min-width: $mobile-width;
+  padding: 0 5%;
+
+  font-family: "CoreSansE", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: $main-text-color;
+}
