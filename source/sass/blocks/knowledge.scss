@@ -1,0 +1,11 @@
+.knowledge {
+
+
+  &__title {
+
+
+    &::before {
+      content: "ты узнаешь";
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.instructor {
+
+
+  &__title {
+
+
+    &::before {
+      content: "инструктор";
+    }
+  }
+}

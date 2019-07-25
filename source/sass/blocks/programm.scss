@@ -1,0 +1,11 @@
+.programm {
+
+
+  &__title {
+
+
+    &::before {
+      content: "программа";
+    }
+  }
+}

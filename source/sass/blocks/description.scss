@@ -1,0 +1,53 @@
+.description {
+  padding-bottom: 27px;
+
+  &__title {
+
+
+    &::before {
+      content: "что вас ждёт";
+    }
+  }
+
+  &__dot {
+    width: 11px;
+    height: 11px;
+    margin: 0 auto;
+
+    background-color: #ff0000;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #ffe5e5;
+  }
+
+  &__start-container {
+    margin-bottom: 43px;
+
+    text-align: center;
+  }
+
+  &__start {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 21px;
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $bright-color;
+  }
+
+  &__finish-container {
+    text-align: center;
+  }
+
+  &__finish {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 21px;
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $bright-color;
+  }
+}

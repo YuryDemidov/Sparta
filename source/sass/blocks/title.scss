@@ -1,0 +1,33 @@
+.title {
+  position: relative;
+  left: -4%;
+  overflow: hidden;
+
+  width: 109%;
+  margin: 0;
+  padding: 48px 0;
+
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  color: $bright-color;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+
+    font-family: $nice-font;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 10px;
+    color: $dim-color;
+    white-space: nowrap;
+
+    transform: translate(-50%, -43%);
+  }
+}

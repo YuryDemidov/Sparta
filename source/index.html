@@ -43,12 +43,11 @@
   </header>
   <main class="page-content">
     <section class="page-content__description description">
-      <h2 class="description__title title">
-        <p class="title__main">Что вас ждёт</p>
-        <p class="title__shadow">Что вас ждёт</p>
-      </h2>
-      <b class="description__start">Start</b>
-      <div class="description__dot description__dot--start"></div>
+      <h2 class="description__title title">Что вас ждёт</h2>
+      <div class="description__start-container">
+        <b class="description__start">Start</b>
+        <div class="description__dot description__dot--start"></div>
+      </div>
       <ul class="description__features features-list">
         <li class="features-list__item">
           <h3 class="features-list__feature">Спецзнания</h3>
@@ -67,14 +66,16 @@
           <p class="features-list__explanation">Участникам предстоит преодолевая себя действовать в стрессовой обстановке, применять на практике полученные ранее знания</p>
         </li>
       </ul>
-      <div class="description__dot description__dot--finish"></div>
-      <b class="description__finish">Finish</b>
+      <div class="description__finish-container">
+        <div class="description__dot description__dot--finish"></div>
+        <b class="description__finish">Finish</b>
+      </div>
     </section>
     <section class="page-content__experience experience">
       <div class="experience__wrapper">
         <section class="experience__will-be">
           <header class="experience__heading experience__heading--present">
-            <h2 class="experience__title">Что даёт наш спец-курс</h2>
+            <h2 class="experience__title">Что даёт наш спец - курс</h2>
           </header>
           <div class="experience__content">
             <ol class="experience__list">
@@ -83,32 +84,29 @@
                 <p class="experience__description">Вы научитесь не допускать и предотвращать попадание человека в опасные ситуации на природе и в городе</p>
               </li>
               <li class="experience__list-item">
-                <h3 class="experience__item">Важные навки</h3>
+                <h3 class="experience__item">Важные навыки</h3>
                 <p class="experience__description">Получите не только все базовые знания, но и навыки, которые могут спасти жизнь и здоровье, как своё, так и родных, близких и людей вокруг</p>
               </li>
             </ol>
           </div>
         </section>
-        <section class="experience__will-not-be">
-          <header class="experience__heading experience__heading--not-present">
-            <h2 class="experience__title">Чего не будет</h2>
-          </header>
-          <div class="experience__item-not-present">
-            <h3 class="experience__item">Нет скуке!</h3>
-            <p class="experience__description">Не будет скучной и нудной теории. Курс состоит на 80% ищ практики и только на 20% из теории!</p>
-          </div>
-          <div class="experience__item-not-present">
-            <h3 class="experience__item">И вакханалиям</h3>
-            <p class="experience__description">Никаких песен у костра и алкопоходов. Только хардкор!</p>
-          </div>
-        </section>
       </div>
+      <section class="experience__will-not-be">
+        <header class="experience__heading experience__heading--not-present">
+          <h2 class="experience__title">Чего не будет</h2>
+        </header>
+        <div class="experience__item-not-present">
+          <h3 class="experience__item">Нет скуке!</h3>
+          <p class="experience__description">Не будет скучной и нудной теории. Курс состоит на 80% ищ практики и только на 20% из теории!</p>
+        </div>
+        <div class="experience__item-not-present">
+          <h3 class="experience__item">И вакханалиям</h3>
+          <p class="experience__description">Никаких песен у костра и алкопоходов. Только хардкор!</p>
+        </div>
+      </section>
     </section>
     <section class="page-content__knowledge knowledge">
-      <h2 class="knowledge__title title">
-        <p class="title__main">Ты узнаешь, что делать</p>
-        <p class="title__shadow">Ты узнаешь</p>
-      </h2>
+      <h2 class="knowledge__title title">Ты узнаешь, что делать</h2>
       <ol class="knowledge__list">
         <li class="knowledge__item knowledge__item--01">
           <h3 class="knowledge__name">Если заблудился</h3>
@@ -161,10 +159,7 @@
       <a class="challenge__button button" href="#">Рискнуть</a>
     </section>
     <section class="page-content__learning learning">
-      <h2 class="learning__title title">
-        <p class="title__main">Ты приобретёшь навык</p>
-        <p class="title__shadow">Ты приобретёшь</p>
-      </h2>
+      <h2 class="learning__title title">Ты приобретёшь навык</h2>
       <ul class="learning__skill-list">
         <li class="learning__skill">Освоишь больше десятка узлов</li>
         <li class="learning__skill">Побываешь в роли пострадавшего и спасателя</li>
@@ -174,10 +169,7 @@
       </ul>
     </section>
     <section class="page-content__programm programm">
-      <h2 class="programm__title title">
-        <p class="title__main">В программе спецкурса</p>
-        <p class="title__shadow title__shadow--white">Программа</p>
-      </h2>
+      <h2 class="programm__title title">В программе спецкурса</h2>
       <ol class="programm__list">
         <li class="programm__paragraph">Военный альпинизм с минимальным набором снаряжения</li>
         <li class="programm__paragraph">Тактическая медицина</li>
@@ -194,10 +186,7 @@
       <img class="programm__photo" src="img/programm__photo-mobile.jpg" alt="">
     </section>
     <section class="page-content__instructor instructor">
-      <h2 class="instructor__title title">
-        <p class="title__main">Инструктор</p>
-        <p class="title__shadow">Инструктор</p>
-      </h2>
+      <h2 class="instructor__title title">Инструктор</h2>
       <img class="instructor__photo" src="img/instructor__photo.jpg" alt="Инструктор Роман Попков">
       <p class="instructor__name">Роман Попков</p>
       <ul class="instructor__dignities">
@@ -236,10 +225,7 @@
       <a class="challenge__button button" href="#">Рискнуть</a>
     </section>
     <section class="page-content__comments comments">
-      <h2 class="comments__title title">
-        <p class="title__main">Отзывы</p>
-        <p class="title__shadow">Отзывы</p>
-      </h2>
+      <h2 class="comments__title title">Отзывы</h2>
       <video controls src="video/#" preload="metadata" poster="img/video-poster.jpg" width="292" height="164"></video>
       <div class="comments__comment comment">
         <img class="comment__author-photo" src="img/comment__author--mobile.jpg" alt="Дмитрий Весна">
@@ -257,10 +243,7 @@
       </div>
     </section>
     <section class="page-content__places places">
-      <h2 class="places__title title">
-        <p class="title__main">География проведения</p>
-        <p class="title__shadow">Мы здесь были</p>
-      </h2>
+      <h2 class="places__title title">География проведения</h2>
       <img class="places__map" src="img/places__map--mobile.jpg" alt="">
     </section>
     <section class="page-content__support support">

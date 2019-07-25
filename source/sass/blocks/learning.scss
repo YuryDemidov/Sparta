@@ -1,0 +1,11 @@
+.learning {
+
+
+  &__title {
+
+
+    &::before {
+      content: "ты приобретёшь";
+    }
+  }
+}

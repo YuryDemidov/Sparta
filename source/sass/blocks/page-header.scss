@@ -1,15 +1,12 @@
 .page-header {
-  width: $mobile-width;
-  max-width: $tablet-width;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 5%;
   padding-bottom: 142px;
 
   color: #ffffff;
 
   background-color: #915960;
   background-image: url("../img/page-header__background--mobile.jpg");
-
+  background-size: cover;
 
   &__top {
     display: flex;
@@ -43,6 +40,11 @@
     letter-spacing: 11px;
 
     background-image: linear-gradient(to left, transparent, transparent 15%, rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.2) 65%, transparent 85%, transparent 100%);
+  }
+
+  &__content {
+    margin: 0 auto;
+    width: 290px;
   }
 
   &__heading {

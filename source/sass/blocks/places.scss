@@ -1,0 +1,11 @@
+.places {
+
+
+  &__title {
+
+
+    &::before {
+      content: "мы здесь были";
+    }
+  }
+}
