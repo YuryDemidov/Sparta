@@ -79,4 +79,35 @@
   &__description {
     line-height: 24px;
   }
+
+  &__heading--not-present {
+    padding-bottom: 20px;
+
+    background-image: url(../img/experience__exclamation--mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__title--not-present {
+    margin: 0;
+    padding-top: 54px;
+
+    letter-spacing: 2px;
+  }
+
+  &__subtitle {
+    margin-top: 25px;
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__explanation {
+    padding-bottom: 12px;
+
+    line-height: 24px;
+  }
 }
+

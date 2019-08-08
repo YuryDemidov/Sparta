@@ -1,0 +1,83 @@
+.more-features {
+  padding-top: 24px;
+
+  &__title {
+    margin-bottom: 40px;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $bright-color;
+  }
+
+  &__flex-container {
+    display: flex;
+  }
+
+  &__numbers-list {
+    position: relative;
+
+    width: 54px;
+    height: 470px;
+    margin: 0;
+    margin-right: 23px;
+    padding: 0;
+
+    background-image: url(../img/more-features__counter--mobile.png);
+    background-repeat: no-repeat;
+
+    list-style: none;
+  }
+
+  &__number {
+    position: absolute;
+
+    font-weight: 900;
+    line-height: 24px;
+    color: #fff;
+
+    &:nth-child(1) {
+      top: 13px;
+      left: 18px;
+    }
+
+    &:nth-child(2) {
+      top: 118px;
+      left: 18px;
+    }
+
+    &:nth-child(3) {
+      top: 222px;
+      left: 18px;
+    }
+
+    &:nth-child(4) {
+      top: 327px;
+      left: 18px;
+    }
+
+    &:nth-child(5) {
+      top: 431px;
+      left: 18px;
+    }
+  }
+
+  &__features-list {
+    position: relative;
+
+    width: 190px;
+    margin: 0;
+    padding: 0;
+
+    line-height: 24px;
+
+    list-style: none;
+  }
+
+  &__feature {
+    margin-bottom: 57px;
+  }
+}

@@ -1,11 +1,73 @@
 .knowledge {
-
+  text-align: center;
 
   &__title {
-
+    padding-top: 40px;
 
     &::before {
       content: "ты узнаешь";
     }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    line-height: 24px;
+  }
+
+  &__item {
+    position: relative;
+
+    overflow: hidden;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 120px;
+      height: 100px;
+      margin: 0 auto;
+
+      background-image: url(../img/knowledge__numbers-sprite.png);
+      background-repeat: no-repeat;
+      background-position-y: center;
+    }
+  }
+
+  &__item--01::before {
+    background-position-x: -15px;
+  }
+
+  &__item--02::before {
+    background-position-x: -143px;
+  }
+
+  &__item--03::before {
+    background-position-x: -286px;
+  }
+
+  &__item--04::before {
+    background-position-x: -423px;
+  }
+
+  &__item--05::before {
+    background-position-x: -563px;
+  }
+
+  &__name {
+    margin-top: 26px;
+    margin-bottom: 14px;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 42px;
+    padding: 0;
   }
 }
