@@ -17,6 +17,8 @@
   background-color: transparent;
   background-image: url("../img/button.png");
 
+  cursor: pointer;
+
   &:hover {
     background-image: url("../img/button--active.png");
   }

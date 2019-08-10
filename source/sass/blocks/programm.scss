@@ -1,11 +1,66 @@
 .programm {
-
+  background-image: url("../img/programm__background--mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &__title {
+    z-index: 1;
 
+    padding-top: 35px;
+    padding-bottom: 44px;
 
     &::before {
       content: "программа";
+
+      z-index: -1;
+
+      color: #ffffff;
     }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    counter-reset: programm-items-counter;
+  }
+
+  &__list-item {
+    position: relative;
+
+    margin-bottom: 24px;
+    padding-left: 46px;
+
+    line-height: 24px;
+
+    counter-increment: programm-items-counter;
+
+    &::before {
+      content: "0" counter(programm-items-counter);
+
+      position: absolute;
+      left: 0;
+      top: 6px;
+
+      font-family: $nice-font;
+      font-size: 30px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      color: $bright-color;
+    }
+  }
+
+  &__call {
+    display: block;
+    margin-top: 42px;
+    margin-bottom: 37px;
+
+    font-family: $nice-font;
+    font-size: 54px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: $bright-color;
   }
 }

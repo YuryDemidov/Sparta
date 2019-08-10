@@ -1,0 +1,30 @@
+.challenge {
+  padding-top: 134px;
+  padding-bottom: 140px;
+
+  color: #ffffff;
+
+  background-color: #4b4b4b;
+  background-image: url("../img/challenge__background--mobile.jpg");
+  background-repeat: no-repeat;
+
+  &__highlight {
+    font-family: $nice-font;
+    font-size: 80px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: $bright-color;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: -12px;
+    margin-bottom: 50px;
+    padding: 0;
+
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+  }
+}

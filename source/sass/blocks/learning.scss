@@ -1,11 +1,52 @@
 .learning {
-
+  background-image: url("../img/learning__path-text-background.png");
+  background-repeat: no-repeat;
+  background-position: 0 138px;
 
   &__title {
-
+    min-height: 219px;  /* Для последующего контента */
 
     &::before {
       content: "ты приобретёшь";
     }
+  }
+
+  &__skills-list {
+    margin: 0;
+    padding: 0;
+
+    line-height: 24px;
+
+    list-style: none;
+  }
+
+  &__skill {
+    width: 180px;
+  }
+
+  &__skill--1 {
+    margin-top: 20px;
+    margin-left: 75px;
+  }
+
+  &__skill--2 {
+    margin-top: 88px;
+    margin-left: 98px;
+  }
+
+  &__skill--3 {
+    margin-top: 64px;
+    margin-left: 112px;
+  }
+
+  &__skill--4 {
+    margin-top: 110px;
+    margin-left: 90px;
+  }
+
+  &__skill--5 {
+    width: 220px;
+    margin-top: 68px;
+    margin-left: 57px;
   }
 }

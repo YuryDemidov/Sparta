@@ -1,0 +1,24 @@
+.tour-photo-slider {
+  position: relative;
+
+  &__button {
+    position: absolute;
+    top: 0;
+
+    width: 40px;
+    height: 100%;
+    border: none;
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    cursor: pointer;
+  }
+
+  &__button--previous {
+    left: 0;
+  }
+
+  &__button--next {
+    right: 0;
+  }
+}
