@@ -1,0 +1,24 @@
+.support {
+  color: #ffffff;
+
+  background-color: #625454;
+  background-image: url("../img/support__background--mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-family: $nice-font;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 2.5px;
+  }
+
+  &__description {
+    margin-bottom: 38px;
+
+    line-height: 24px;
+  }
+}

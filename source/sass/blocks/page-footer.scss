@@ -1,0 +1,55 @@
+.page-footer {
+  padding-top: 48px;
+  padding-bottom: 57px;
+
+  text-align: center;
+  font-size: 14px;
+  color: #3c313b;
+
+  &__phone {
+    margin-bottom: 51px;
+  }
+
+  &__number {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__privacy-policy-link {
+    display: inline-block;
+    padding-bottom: 4px;
+
+    vertical-align: top;
+    text-decoration: none;
+    color: inherit;
+
+    background-image: linear-gradient(to right, #3c313b, #3c313b 66%, transparent 66%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 6px 1px;
+
+    &:hover {
+      background-image: linear-gradient(to right, $main-text-color, $main-text-color 100%);
+    }
+
+    &:focus {
+      outline: none;
+      background-image: linear-gradient(to right, $bright-color, $bright-color 100%);
+    }
+  }
+
+  &__logo {
+    position: relative;
+
+    margin-top: 50px;
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 0;
+
+    font-weight: bold;
+  }
+}

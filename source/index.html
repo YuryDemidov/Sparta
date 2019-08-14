@@ -185,9 +185,9 @@
       <a class="programm__button button" href="#">Рискнуть</a>
     </section>
     <section class="tour-photo-slider">
-      <button class="tour-photo-slider__button tour-photo-slider__button--previous"></button>
+      <button class="tour-photo-slider__button tour-photo-slider__button--previous"><span class="visually-hidden">previous</span></button>
       <img class="tour-photo-slider__photo-1" src="img/programm__photo-mobile.jpg" alt="">
-      <button class="tour-photo-slider__button tour-photo-slider__button--next"></button>
+      <button class="tour-photo-slider__button tour-photo-slider__button--next"><span class="visually-hidden">next</span></button>
     </section>
     <section class="page-content__instructor instructor">
       <h2 class="instructor__title title">Инструктор</h2>
@@ -198,8 +198,8 @@
         <li class="instructor__dignity">8 восхождений на Эльбрус (Западная и Восточная вершины), восхождение на Монблан. Неоднократно принимал участие в спасательных работах в горах. Спас двоих человек на вершине Эльбруса в снежную бурю</li>
         <li class="instructor__dignity">Обучался у военных, горных и инструкторов по туризму</li>
         <li class="instructor__dignity">Обучался в центре подготовки спасателей</li>
-        <li class="instructor__dignity">Инструктор по первой помощи по программе Красного Креста</li>
-        <li class="instructor__dignity">Обучение и  подготовка в Центре медицины катастроф</li>
+        <li class="instructor__dignity">Инструктор по первой помощи по&nbsp;программе Красного Креста</li>
+        <li class="instructor__dignity">Обучение и подготовка в<br> Центре медицины катастроф</li>
         <li class="instructor__dignity">Дайвер</li>
       </ul>
       <div class="instructor__achievements">
@@ -230,47 +230,53 @@
     </section>
     <section class="page-content__comments comments">
       <h2 class="comments__title title">Отзывы</h2>
-      <video controls src="video/#" preload="metadata" poster="img/video-poster.jpg" width="292" height="164"></video>
+      <video class="comments__video" src="video/#" poster="img/video-poster.jpg" width="292" height="164"></video>
       <div class="comments__comment comment">
         <img class="comment__author-photo" src="img/comment__author--mobile.jpg" alt="Дмитрий Весна">
         <p class="comment__author-name">Дмитрий Весна</p>
-        <p class="comment__text">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск</p>
+        <p class="comment__text">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Никакое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск</p>
         <button type="button" class="comment__show">Читать весь отзыв</button>
-      </div>
-      <div class="comments__slider slider-controls">
-        <button class="slider-controls__btn slider-controls__btn--prev" type="button">previous</button>
-        <button class="slider-controls__btn-dot slider-controls__btn-dot--active" type="button">1</button>
-        <button class="slider-controls__btn-dot" type="button">2</button>
-        <button class="slider-controls__btn-dot" type="button">3</button>
-        <button class="slider-controls__btn-dot" type="button">4</button>
-        <button class="slider-controls__btn slider-controls__btn--next" type="button">next</button>
+        <div class="comments__slider slider-controls">
+          <button class="slider-controls__btn slider-controls__btn--prev" type="button">previous</button>
+          <button class="slider-controls__btn-dot slider-controls__btn-dot--1 slider-controls__btn-dot--1-active" type="button">1</button>
+          <button class="slider-controls__btn-dot slider-controls__btn-dot--2" type="button">2</button>
+          <button class="slider-controls__btn-dot slider-controls__btn-dot--3" type="button">3</button>
+          <button class="slider-controls__btn-dot slider-controls__btn-dot--4" type="button">4</button>
+          <button class="slider-controls__btn slider-controls__btn--next" type="button">next</button>
+        </div>
       </div>
     </section>
     <section class="page-content__places places">
       <h2 class="places__title title">География проведения</h2>
-      <img class="places__map" src="img/places__map--mobile.jpg" alt="">
+      <div class="places__map-wrapper">
+        <img class="places__map" src="img/places__map.png" alt="Карта проведения Спарт">
+      </div>
     </section>
     <section class="page-content__support support">
       <h2 class="support__title">Есть вопросы?</h2>
       <p class="support__description">Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют</p>
       <form class="support__form form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="form__input" type="text" name="name" id="name-id" placeholder="Имя">
-        <input class="form__input" type="tel" name="phone" id="phone-id" placeholder="Телефон">
+        <input class="form__input" type="text" name="name" id="name-id" placeholder="Имя" required>
+        <input class="form__input" type="tel" name="phone" id="phone-id" placeholder="Телефон" required>
         <button class="form__btn button" type="submit">Отправить</button>
       </form>
     </section>
     <footer class="page-footer">
-      <div class="page-footer__phone phone">
-        <a class="phone__number" href="tel:+79304150252">+7 (930) 415 02 52</a>
+      <div class="page-footer__phone">
+        <a class="page-footer__number" href="tel:+79304150252">+7 (930) 415 02 52</a>
       </div>
-      <a class="page-footer__privacy-policy" href="#"></a>
+      <div class="page-footer__privacy-policy">
+        <a class="page-footer__privacy-policy-link" href="#">Политика конфиденциальности</a>
+      </div>
       <div class="page-footer__logo logo">
         <a class="logo__link">
           <img class="logo__image" src="img/page-footer__logo--mobile.png" alt="Логотип «Спарта»" width="156" height="56">
           <span class="visually-hidden">Курс по выживанию "Спарта"</span>
-        </a>
+        </a><br>
         <span class="page-footer__copyright">© 2017</span>
+      </div>
     </footer>
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>

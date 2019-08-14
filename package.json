@@ -24,5 +24,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
   }
 }

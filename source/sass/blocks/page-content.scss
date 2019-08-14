@@ -6,7 +6,7 @@
   }
 
   &__experience {
-    padding: 0 5%;
+    padding: 0 4%;
     padding-top: 131px;
     padding-bottom: 111px;
   }
@@ -36,6 +36,19 @@
   }
 
   &__instructor {
+    padding: 0 4%;
+    padding-bottom: 26px;
+  }
+
+  &__comments {
+    padding: 0 4%;
+    padding-top: 18px;
+    padding-bottom: 81px;
+  }
+
+  &__support {
     padding: 0 5%;
+    padding-top: 83px;
+    padding-bottom: 115px;
   }
 }

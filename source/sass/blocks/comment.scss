@@ -1,0 +1,79 @@
+.comment {
+  z-index: 1;
+
+  padding-bottom: 15px;
+
+  text-align: center;
+  border: 14px solid transparent;
+
+  border-image-source: url("../img/comment__border-image.png");
+  border-image-slice: 30;
+  border-image-outset: 22px;
+  border-image-width: 22px;
+  border-image-repeat: repeat;
+  box-shadow: 0 9px 76px 20px rgba(0,0,0,.1);
+
+  &__author-photo {
+    margin-top: 12px;
+    margin-bottom: 25px;
+  }
+
+  &__author-name {
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-top: 22px;
+    margin-bottom: 21px;
+
+    line-height: 24px;
+  }
+
+  &__show {
+    position: relative;
+
+    margin-bottom: 42px;
+    padding: 0;
+    padding-right: 20px;
+    border: none;
+
+    line-height: 24px;
+    color: inherit;
+
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, $main-text-color, $main-text-color 66%, transparent 66%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 6px 1px;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 40%;
+      right: 0;
+
+      width: 5px;
+      height: 5px;
+      border-right: 1px solid $main-text-color;
+      border-bottom: 1px solid $main-text-color;
+
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      background-image: linear-gradient(to right, $main-text-color, $main-text-color 100%);
+    }
+
+    &:focus {
+      outline: none;
+      background-image: linear-gradient(to right, $bright-color, $bright-color 100%);
+    }
+  }
+}

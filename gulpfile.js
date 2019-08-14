@@ -39,7 +39,7 @@ gulp.task("images", function () {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 80}))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -64,7 +64,7 @@ gulp.task("serve", function() {
   server.init({
     server: "build/"
   });
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("style"))
+  gulp.watch("source/sass/**/*.scss", gulp.series("style"))
   gulp.watch("source/*.html", gulp.series("html")).on("change", server.reload);
 });
 

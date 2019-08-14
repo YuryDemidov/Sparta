@@ -5,6 +5,9 @@
     position: absolute;
     top: 0;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 100%;
     border: none;
@@ -12,13 +15,37 @@
     background-color: rgba(255, 255, 255, 0.5);
 
     cursor: pointer;
+
+    &::before {
+      content: "";
+
+      opacity: 0;
+
+      width: 16px;
+      height: 16px;
+      border-top: 3px solid #3c3c3c;
+      border-right: 3px solid #3c3c3c;
+      transition: opacity 1s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
   }
 
   &__button--previous {
     left: 0;
+
+    &::before {
+      transform: rotate(-135deg);
+    }
   }
 
   &__button--next {
     right: 0;
+
+    &::before {
+      transform: rotate(45deg);
+    }
   }
 }

@@ -1,0 +1,113 @@
+.slider-controls {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  width: 255px;
+  margin: 0 auto;
+
+  &__btn {
+    border: none;
+
+    font-size: 0;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+  }
+
+  &__btn--prev {
+    width: 40px;
+    height: 20px;
+    margin-right: auto;
+
+    background-image: url("../img/slider-controls__previous.png");
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      background-image: url("../img/slider-controls__previous--hover.png");
+    }
+  }
+
+  &__btn--next {
+    width: 70px;
+    height: 20px;
+    margin-left: auto;
+
+    background-image: url("../img/slider-controls__next.png");
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      background-image: url("../img/slider-controls__next--hover.png");
+    }
+  }
+
+  &__btn-dot {
+    width: 25px;
+    height: 20px;
+    border: none;
+
+    font-size: 0;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    cursor: pointer;
+  }
+
+  &__btn-dot--1 {
+    background-image: url("../img/slider-controls__dot-1.png");
+    background-position: 50% 60%;
+
+    &:hover,
+    &:focus,
+    &-active {
+      outline: none;
+
+      background-image: url("../img/slider-controls__dot-1--hover.png");
+    }
+  }
+
+  &__btn-dot--2 {
+    background-image: url("../img/slider-controls__dot-2.png");
+
+    &:hover,
+    &:focus,
+    &-active {
+      outline: none;
+
+      background-image: url("../img/slider-controls__dot-2--hover.png");
+    }
+  }
+
+  &__btn-dot--3 {
+    background-image: url("../img/slider-controls__dot-3.png");
+
+    &:hover,
+    &:focus,
+    &-active {
+      outline: none;
+
+      background-image: url("../img/slider-controls__dot-3--hover.png");
+    }
+  }
+
+  &__btn-dot--4 {
+    background-image: url("../img/slider-controls__dot-4.png");
+    background-position: 50% 40%;
+
+    &:hover,
+    &:focus,
+    &-active {
+      outline: none;
+
+      background-image: url("../img/slider-controls__dot-4--hover.png");
+    }
+  }
+}

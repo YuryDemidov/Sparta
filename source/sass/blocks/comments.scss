@@ -1,11 +1,18 @@
 .comments {
+  overflow: hidden;
 
 
   &__title {
-
+    padding-bottom: 58px;
 
     &::before {
       content: "отзывы";
     }
+  }
+
+  &__video {
+    margin-bottom: 72px;
+
+    cursor: pointer;
   }
 }
