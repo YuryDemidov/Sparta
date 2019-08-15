@@ -23,7 +23,7 @@
         <a class="phone__number" href="tel:+79304150252">+7 (930) 415 02 52</a>
       </div>
       <div class="page-header__intro-title">
-        спецкурс
+        <span>спецкурс</span>
       </div>
     </div>
     <div class="page-header__content">
@@ -57,11 +57,11 @@
         </li>
         <li class="features-list__item">
           <h3 class="features-list__feature">Спецнавыки</h3>
-          <p class="features-list__explanation">3 дня в лесу, без палаток, зажигалок и любых других гаджетов, которые облегчали бы жизнь</p>
+          <p class="features-list__explanation">3 дня в лесу, без палаток, зажигалок и&nbsp;любых других гаджетов, которые облегчали бы жизнь</p>
         </li>
         <li class="features-list__item">
           <h3 class="features-list__feature">Экстрим</h3>
-          <p class="features-list__explanation">Смоделированные экстремальные ситуаци, максимально приближенные к реальности. Вам придётся спасать утопающих из воды, спускаться по верёвке по отвесным скалам, добывать воду, жить в шалашах и землянках</p>
+          <p class="features-list__explanation">Смоделированные экстремальные ситуации, максимально приближенные к&nbsp;реальности. Вам придётся спасать утопающих из воды, спускаться по верёвке по отвесным скалам, добывать воду, жить в шалашах и землянках</p>
         </li>
         <li class="features-list__item">
           <h3 class="features-list__feature">Постоянный стресс</h3>
@@ -230,7 +230,7 @@
     </section>
     <section class="page-content__comments comments">
       <h2 class="comments__title title">Отзывы</h2>
-      <video class="comments__video" src="video/#" poster="img/video-poster.jpg" width="292" height="164"></video>
+      <video class="comments__video" src="video/comments__video.mp4" poster="img/video-poster.jpg" width="292" height="164"></video>
       <div class="comments__comment comment">
         <img class="comment__author-photo" src="img/comment__author--mobile.jpg" alt="Дмитрий Весна">
         <p class="comment__author-name">Дмитрий Весна</p>
@@ -256,27 +256,27 @@
       <h2 class="support__title">Есть вопросы?</h2>
       <p class="support__description">Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют</p>
       <form class="support__form form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="form__input" type="text" name="name" id="name-id" placeholder="Имя" required>
-        <input class="form__input" type="tel" name="phone" id="phone-id" placeholder="Телефон" required>
+        <input class="form__input" type="text" name="name" id="name-id" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" value="" required>
+        <input class="form__input" type="tel" name="phone" id="phone-id" placeholder="Телефон" pattern="^[0-9-+\s]+$" value="" required>
         <button class="form__btn button" type="submit">Отправить</button>
       </form>
     </section>
-    <footer class="page-footer">
-      <div class="page-footer__phone">
-        <a class="page-footer__number" href="tel:+79304150252">+7 (930) 415 02 52</a>
-      </div>
-      <div class="page-footer__privacy-policy">
-        <a class="page-footer__privacy-policy-link" href="#">Политика конфиденциальности</a>
-      </div>
-      <div class="page-footer__logo logo">
-        <a class="logo__link">
-          <img class="logo__image" src="img/page-footer__logo--mobile.png" alt="Логотип «Спарта»" width="156" height="56">
-          <span class="visually-hidden">Курс по выживанию "Спарта"</span>
-        </a><br>
-        <span class="page-footer__copyright">© 2017</span>
-      </div>
-    </footer>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__phone">
+      <a class="page-footer__number" href="tel:+79304150252">+7 (930) 415 02 52</a>
+    </div>
+    <div class="page-footer__privacy-policy">
+      <a class="page-footer__privacy-policy-link" href="#">Политика конфиденциальности</a>
+    </div>
+    <div class="page-footer__logo logo">
+      <a class="logo__link">
+        <img class="logo__image" src="img/page-footer__logo--mobile.png" alt="Логотип «Спарта»" width="156" height="56">
+        <span class="visually-hidden">Курс по выживанию "Спарта"</span>
+      </a><br>
+      <span class="page-footer__copyright">© 2017</span>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>

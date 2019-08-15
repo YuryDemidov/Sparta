@@ -1,22 +1,39 @@
 .heading {
 
-
   &__text {
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 38px;
-    line-height: 8px;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 1.9px;
+    letter-spacing: 2px;
     color: #ffffff;
   }
 
   &__highlight {
+    display: inline-block;
+    margin-bottom: -17px;
+
     font-family: $nice-font;
     font-size: 102px;
+    font-weight: normal;
     line-height: 1.15;
+    letter-spacing: 4px;
     color: $bright-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .heading {
+
+    &__text {
+      font-size: 40px;
+    }
+
+    &__highlight {
+      font-size: 107px;
+      margin-bottom: -21px;
+    }
   }
 }

@@ -1,6 +1,5 @@
 .button {
   display: block;
-  margin-left: -8px;
   padding-top: 18px;
   width: 307px;
   height: 73px;
@@ -17,6 +16,8 @@
   background-color: transparent;
   background-image: url("../img/button.png");
 
+  transform: translateX(-8px);
+
   cursor: pointer;
 
   &:hover {
@@ -32,5 +33,11 @@
     padding-top: 20px;
 
     background-image: url("../img/button--active.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    margin-left: 0;
   }
 }

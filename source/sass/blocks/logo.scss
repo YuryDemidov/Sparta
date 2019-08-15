@@ -1,0 +1,13 @@
+.logo {
+
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 164px;
+  }
+}

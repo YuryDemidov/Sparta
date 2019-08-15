@@ -17,6 +17,23 @@
     &::placeholder {
       color: #ffffff;
     }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:focus {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      border: 1px solid rgba(255, 0, 0, 0.3);
+
+      background-color: rgba(255, 0, 0, 0.3);
+    }
   }
 
   &__btn {
