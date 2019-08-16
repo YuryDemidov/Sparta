@@ -11,3 +11,15 @@
     width: 164px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 247px;
+    height: 89px;
+
+    &__image {
+      width: 247px;
+      height: 89px;
+    }
+  }
+}

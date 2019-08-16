@@ -1,10 +1,10 @@
 .learning {
   background-image: url("../img/learning__path-text-background.png");
   background-repeat: no-repeat;
-  background-position: 0 138px;
+  background-position: 0 120px;
 
   &__title {
-    min-height: 219px;  /* Для последующего контента */
+    min-height: 201px;  /* Для последующего контента */
 
     &::before {
       content: "ты приобретёшь";

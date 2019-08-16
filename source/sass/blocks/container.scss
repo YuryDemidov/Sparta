@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: $desktop-width;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 1.3%;
+  }
+}
+
+

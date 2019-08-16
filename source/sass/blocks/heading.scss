@@ -32,8 +32,28 @@
     }
 
     &__highlight {
-      font-size: 107px;
       margin-bottom: -21px;
+
+      font-size: 107px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading {
+
+    &__text {
+      text-align: left;
+      font-size: 68px;
+      letter-spacing: 3.5px;
+    }
+
+    &__highlight {
+      text-align: left;
+      margin-bottom: -33px;
+
+      font-size: 180px;
+      letter-spacing: 9px;
     }
   }
 }

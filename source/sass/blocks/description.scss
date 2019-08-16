@@ -1,5 +1,5 @@
 .description {
-  padding-bottom: 27px;
+  padding-bottom: 18px;
 
   &__title {
 
@@ -20,7 +20,7 @@
   }
 
   &__start-container {
-    margin-bottom: 43px;
+    margin-bottom: 42px;
 
     text-align: center;
   }
@@ -28,7 +28,7 @@
   &__start {
     display: inline-block;
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 24px;
 
     font-size: 24px;
     font-weight: 300;
@@ -37,6 +37,8 @@
   }
 
   &__finish-container {
+    padding-top: 7px;
+
     text-align: center;
   }
 
@@ -49,5 +51,56 @@
     font-weight: 300;
     line-height: 24px;
     color: $bright-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+
+    &__container {
+      padding-top: 52px;
+
+      background-image: url("../img/description__path--tablet.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 65% 1040px;
+    }
+
+    &__title {
+      margin-bottom: 54px;
+
+      &.title::before {
+        font-size: 130px;
+      }
+    }
+
+    &__start-container {
+      position: absolute;
+      top: 3%;
+      right: 14%;
+    }
+
+    &__finish-container {
+      position: absolute;
+      bottom: 14%;
+      left: 29%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+
+    &__container {
+      background-image: url("../img/description__path--desktop.svg");
+    }
+
+    &__title {
+
+
+      &.title::before {
+        font-size: 180px;
+      }
+    }
   }
 }
