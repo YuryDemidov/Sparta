@@ -8,18 +8,18 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    width: 164px;
+    width: 170px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
-    width: 247px;
-    height: 89px;
+    width: 248px;
+    height: 90px;
 
     &__image {
-      width: 247px;
-      height: 89px;
+      width: 248px;
+      height: 90px;
     }
   }
 }

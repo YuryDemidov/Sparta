@@ -1,7 +1,9 @@
 .learning {
-  background-image: url("../img/learning__path-text-background.png");
+  padding-bottom: 48px;
+
+  background-image: url("../img/learning__path-text--mobile.png");
   background-repeat: no-repeat;
-  background-position: 0 120px;
+  background-position: 0 122px;
 
   &__title {
     min-height: 201px;  /* Для последующего контента */
@@ -48,5 +50,100 @@
     width: 220px;
     margin-top: 68px;
     margin-left: 57px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .learning {
+    padding-bottom: 78px;
+
+    background-image:
+      url("../img/learning__path-text--desktop.png"),
+      url("../img/learning__background--tablet.jpg");
+    background-position:
+      22px 151px,
+      left 316px;
+
+    &__title {
+      margin: 8px 0;
+      padding-top: 68px;
+    }
+
+    &__title br {
+      display: none;
+    }
+
+    &__skill--1 {
+      margin-top: 0;
+      margin-left: 275px;
+    }
+
+    &__skill--2 {
+      width: 200px;
+      margin-top: 73px;
+      margin-left: 369px;
+    }
+
+    &__skill--3 {
+      margin-top: 72px;
+      margin-left: 442px;
+    }
+
+    &__skill--4 {
+      width: 220px;
+      margin-top: 106px;
+      margin-left: 492px;
+    }
+
+    &__skill--5 {
+      width: 220px;
+      margin-top: 89px;
+      margin-left: 502px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .learning {
+    padding-bottom: 206px;
+
+    background-image:
+      url("../img/learning__path-text--desktop.png"),
+      url("../img/learning__background--desktop.jpg");
+    background-position:
+      385px 186px,
+      -378px 126px;
+
+    &__title {
+      z-index: 1;
+
+      margin-top: 85px;
+      margin-bottom: 38px;
+      padding-top: 68px;
+    }
+
+    &__title br {
+      display: none;
+    }
+
+    &__skill--1 {
+      margin-left: 645px;
+    }
+
+    &__skill--2 {
+      margin-left: 740px;
+    }
+
+    &__skill--3 {
+      margin-left: 812px;
+    }
+
+    &__skill--4 {
+      margin-left: 862px;
+    }
+
+    &__skill--5 {
+      margin-left: 872px;
+    }
   }
 }

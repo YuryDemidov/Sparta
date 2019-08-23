@@ -1,6 +1,8 @@
 .comments {
-  overflow: hidden;
+  padding-top: 18px;
+  padding-bottom: 81px;
 
+  overflow: hidden;
 
   &__title {
     padding-bottom: 39px;
@@ -11,8 +13,43 @@
   }
 
   &__video {
+    display: block;
+    margin: 0 auto;
     margin-bottom: 72px;
 
+    background-color: transparent;
+    background-image: url("../img/comments__video-poster--mobile.jpg");
+
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+
+    &__video {
+      width: 723px;
+      height: 407px;
+
+      background-image: url("../img/comments__video-poster--tablet.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments {
+    padding-top: 50px;
+
+    &__title {
+      margin-bottom: 36px;
+      padding-bottom: 60px;
+    }
+
+    &__video {
+      width: 1142px;
+      height: 642px;
+
+      background-image: url("../img/comments__video-poster--desktop.jpg");
+    }
   }
 }

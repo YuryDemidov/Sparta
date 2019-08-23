@@ -1,14 +1,33 @@
+@keyframes slides-animation {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .tour-photo-slider {
   position: relative;
+
+  overflow: hidden;
+
+  &__photo {
+    width: 100%;
+
+    animation-name: slides-animation;
+    animation-duration: 1.5s;
+  }
 
   &__button {
     position: absolute;
     top: 0;
+    z-index: 1;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 8%;
     height: 100%;
     border: none;
 
@@ -31,6 +50,15 @@
     &:hover::before {
       opacity: 1;
     }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:focus::before {
+      opacity: 1;
+    }
   }
 
   &__button--previous {
@@ -46,6 +74,47 @@
 
     &::before {
       transform: rotate(45deg);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tour-photo-slider {
+
+    &__photo {
+      width: auto;
+    }
+
+    &__photo--1 {
+      display: block !important;
+    }
+
+    &__photo--2,
+    &__photo--3 {
+      display: none !important;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tour-photo-slider {
+    height: 574px;
+    margin-top: 115px;
+
+    &__photo {
+      position: absolute;
+      top: 50%;
+      left: -100%;
+      right: -100%;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      transform: translateY(-50%);
     }
   }
 }

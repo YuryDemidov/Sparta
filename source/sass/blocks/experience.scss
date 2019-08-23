@@ -1,40 +1,51 @@
 .experience {
+  padding-top: 129px;
+  padding-bottom: 124px;
+
   color: #ffffff;
 
   background-color: #4b4b4b;
   background-image: url("../img/experience__background--mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 
-  &__wrapper {
+  &__will-be {
     padding-top: 0px;
-    padding-right: 20px;
     padding-bottom: 25px;
-    padding-left: 20px;
     border: 5px solid $bright-color;
     border-image-source: url("../img/experience__border-image.png");
     border-image-slice: 8%;
     border-image-repeat: repeat;
+  }
+
+  &__heading--present {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    min-height: 257px;
 
     background-image: url("../img/experience__photo--mobile.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   &__title {
-    margin-top: 67px;
-    margin-bottom: 67px;
-    margin-left: 25px;
+    margin: 0;
+    margin-left: 20px;
     padding: 0;
 
     font-size: 36px;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
 
   &__content {
     padding-top: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   &__list {
@@ -91,7 +102,7 @@
   &__heading--not-present {
     padding-bottom: 20px;
 
-    background-image: url(../img/experience__exclamation--mobile.png);
+    background-image: url("../img/experience__exclamation--mobile.png");
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -119,3 +130,158 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .experience {
+    padding-top: 170px;
+    padding-bottom: 116px;
+
+    background-image: url("../img/experience__background--tablet.jpg");
+
+    &__will-be {
+      display: flex;
+      padding: 0;
+    }
+
+    &__heading--present {
+      flex-basis: 640px;
+      margin-right: 18px;
+
+      background-image: url("../img/experience__photo--tablet.png");
+    }
+
+    &__title {
+      margin-bottom: 13px;
+      margin-left: 7px;
+    }
+
+    &__content {
+      padding-top: 52px;
+      padding-right: 25px;
+    }
+
+    &__list-item {
+      margin-bottom: 45px;
+
+      &:last-child {
+        margin-bottom: 45px;
+      }
+    }
+
+    &__description {
+      margin: 13px 0;
+    }
+
+    &__will-not-be {
+      display: flex;
+      padding-top: 38px;
+    }
+
+    &__heading--not-present {
+      padding-top: 30px;
+      width: 350px;
+
+      background-image: url("../img/experience__exclamation--desktop.png");
+      background-position: -22px top;
+    }
+
+    &__title--not-present {
+      padding-top: 0;
+      padding-left: 142px;
+    }
+
+    &__not-presented {
+      margin-top: 5px;
+      margin-left: 40px;
+      padding-left: 45px;
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .experience {
+    margin-top: 38px;
+    padding-top: 195px;
+    padding-bottom: 165px;
+
+    background-image: url("../img/experience__background--desktop.jpg");
+    background-position: center top;
+    background-size: auto;
+
+    &__will-be {
+      border-width: 7px;
+    }
+
+    &__heading--present {
+      background-image: url("../img/experience__photo--desktop.png");
+    }
+
+    &__title {
+      margin-bottom: 22px;
+      margin-left: 40px;
+    }
+
+    &__content {
+      flex-shrink: 0;
+      padding: 45px;
+      padding-top: 58px;
+      padding-bottom: 58px;
+      width: 62%;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__list-item {
+      margin-bottom: 0;
+      padding-top: 66px;
+
+      &:first-child {
+        width: 220px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        width: 305px;
+      }
+
+      &::before {
+        font-size: 72px;
+      }
+    }
+
+    &__item {
+      padding-left: 0;
+    }
+
+    &__will-not-be {
+      padding-top: 72px;
+    }
+
+    &__heading--not-present {
+      background-image: url("../img/experience__exclamation--desktop.png");
+    }
+
+    &__title--not-present {
+      padding-left: 110px;
+    }
+
+    &__not-presented {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 5px;
+      width: 70%;
+    }
+
+    &__item-not-present {
+      width: 50%;
+
+      &:first-child {
+        flex-shrink: 0;
+        margin-right: 78px;
+      }
+    }
+  }
+}

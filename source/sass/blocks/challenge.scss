@@ -7,6 +7,7 @@
   background-color: #4b4b4b;
   background-image: url("../img/challenge__background--mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 
   &__highlight {
     font-family: $nice-font;
@@ -26,5 +27,70 @@
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .challenge {
+    margin-top: 14px;
+    padding-top: 120px;
+    padding-bottom: 102px;
+
+    background-image: url("../img/challenge__background--tablet.jpg");
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__highlight {
+      display: block;
+      margin-bottom: 5px;
+
+      font-size: 90px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+
+      font-size: 30px;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .challenge {
+    padding-top: 120px;
+    padding-bottom: 105px;
+
+    background-image: url("../img/challenge__background--desktop.jpg");
+    background-size: auto 100%;
+    background-position: center;
+
+    &__container {
+      align-items: flex-start;
+    }
+
+    &__heading {
+      display: flex;
+      width: 67%;
+    }
+
+    &__highlight {
+      font-size: 121px;
+    }
+
+    &__text {
+      margin-top: 10px;
+      margin-left: 40px;
+
+      font-size: 42px;
+    }
+
+    &__button {
+      margin-top: 18px;
+    }
   }
 }

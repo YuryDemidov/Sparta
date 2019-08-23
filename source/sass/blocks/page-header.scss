@@ -5,6 +5,7 @@
 
   background-color: #915960;
   background-image: url("../img/page-header__background--mobile.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
@@ -133,7 +134,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-bottom: 276px;
+    padding-bottom: 316px;
 
     background-image: url("../img/page-header__background--desktop.jpg");
 

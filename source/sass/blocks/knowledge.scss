@@ -2,7 +2,7 @@
   text-align: center;
 
   &__title {
-    padding-top: 23px;
+    padding-top: 10px;
 
     &::before {
       content: "ты узнаешь";
@@ -31,7 +31,7 @@
       height: 100px;
       margin: 0 auto;
 
-      background-image: url(../img/knowledge__numbers-sprite.png);
+      background-image: url("../img/knowledge__numbers-sprite.png");
       background-repeat: no-repeat;
       background-position-y: center;
     }
@@ -69,5 +69,142 @@
     margin: 0;
     margin-bottom: 42px;
     padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .knowledge {
+
+    &__title {
+      margin-bottom: 30px;
+      padding-top: 53px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(11, 8.6%);
+    }
+
+    &__item {
+      text-align: left;
+
+      &::before {
+        margin-left: 0;
+      }
+
+      &--01 {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+      }
+
+      &--02 {
+        grid-column: 7 / -1;
+        grid-row: 1 / 2;
+      }
+
+      &--03 {
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+      }
+
+      &--04 {
+        grid-column: 7 / -1;
+        grid-row: 2 / 3;
+      }
+
+      &--05 {
+        grid-column: 5 / 10;
+        grid-row: 3 / 4;
+      }
+    }
+
+    &__name {
+      margin-top: 21px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knowledge {
+
+    &__title {
+      margin-top: 93px;
+      margin-bottom: 45px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(3, 15%) 6% repeat(3, 15%);
+      grid-template-rows: 110px 140px 110px 130px 160px;
+    }
+
+    &__item {
+      padding-left: 207px;
+
+      &--01 {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+      }
+
+      &--02 {
+        grid-column: 5 / -1;
+        grid-row: 2 / 4;
+      }
+
+      &--03 {
+        grid-column: 1 / 4;
+        grid-row: 3 / 5;
+      }
+
+      &--04 {
+        grid-column: 5 / -1;
+        grid-row: 4 / 6;
+      }
+
+      &--05 {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        margin: 0;
+        height: 150px;
+
+        background-image: url("../img/knowledge__numbers-sprite--big.png");
+        background-position-y: top;
+      }
+    }
+
+    &__item--01::before {
+      width: 160px;
+      background-position-x: -5px;
+    }
+
+    &__item--02::before {
+      width: 174px;
+      background-position-x: -176px;
+    }
+
+    &__item--03::before {
+      width: 179px;
+      background-position-x: -360px;
+    }
+
+    &__item--04::before {
+      width: 170px;
+      background-position-x: -545px;
+    }
+
+    &__item--05::before {
+      width: 170px;
+      background-position-x: -722px;
+    }
+
+    &__name {
+      margin-top: 10px;
+    }
   }
 }

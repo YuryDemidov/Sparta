@@ -1,8 +1,10 @@
 .programm {
+  padding-bottom: 62px;
+
   background-image: url("../img/programm__background--mobile.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 
   &__title {
     z-index: 1;
@@ -25,7 +27,11 @@
     padding: 0;
 
     list-style: none;
-    counter-reset: programm-items-counter;
+    counter-reset: programm-items-counter 0;
+  }
+
+  &__list--right {
+    counter-reset: programm-items-counter 4;
   }
 
   &__list-item {
@@ -63,5 +69,84 @@
     font-weight: normal;
     letter-spacing: 3px;
     color: $bright-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programm {
+    padding-bottom: 0;
+
+    background: none;
+
+    &__title {
+      margin-bottom: 17px;
+
+      &::before {
+        color: $dim-color;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      padding-top: 75px;
+      padding-bottom: 32px;
+
+      background-image: url("../img/programm__background--desktop.jpg");
+      background-size: 100% 100%;
+    }
+
+    &__list {
+      width: 47%;
+    }
+
+    &__list--left {
+      margin-right: 36px;
+    }
+
+    &__call {
+      margin-right: 55px;
+
+      letter-spacing: 5.5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm {
+
+    &__title {
+      margin-bottom: 33px;
+    }
+
+    &__container {
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 128px;
+      padding-right: 13%;
+      padding-bottom: 75px;
+      padding-left: 13%;
+    }
+
+    &__list {
+      width: 45%;
+    }
+
+    &__list--right {
+      width: 39%;
+    }
+
+    &__call {
+      margin-top: 54px;
+
+      font-size: 87px;
+    }
+
+    &__button {
+      align-self: center;
+      margin-right: 25px;
+    }
   }
 }
