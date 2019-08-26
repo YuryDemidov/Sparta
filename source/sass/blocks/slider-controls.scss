@@ -5,6 +5,7 @@
   justify-content: space-between;
   width: 255px;
   margin: 0 auto;
+  margin-top: -50px;
 
   &__btn {
     border: none;
@@ -109,5 +110,11 @@
 
       background-image: url("../img/slider-controls__dot-4--hover.png");
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider-controls {
+    margin-top: -72px;
   }
 }

@@ -86,6 +86,11 @@
   .instructor {
     padding-bottom: 20px;
 
+    &__title {
+      margin-bottom: 18px;
+      padding-bottom: 50px;
+    }
+
     &__name {
       margin-bottom: 51px;
     }
@@ -112,7 +117,7 @@
     }
 
     &__achievement {
-      width: 50%;
+      width: 47%;
 
       &:nth-child(2) {
         order: 3;
@@ -154,7 +159,9 @@
   .instructor {
 
     &__title {
+      margin-bottom: 42px;
       padding-top: 36px;
+      padding-bottom: 43px;
     }
 
     &__container {

@@ -1,10 +1,12 @@
 .comments {
   padding-top: 18px;
-  padding-bottom: 81px;
+  padding-bottom: 92px;
 
-  overflow: hidden;
+  overflow: visible;
 
   &__title {
+    z-index: 1;
+
     padding-bottom: 39px;
 
     &::before {
@@ -15,7 +17,7 @@
   &__video {
     display: block;
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 75px;
 
     background-color: transparent;
     background-image: url("../img/comments__video-poster--mobile.jpg");
@@ -26,10 +28,16 @@
 
 @media (min-width: $tablet-width) {
   .comments {
+    margin-bottom: 28px;
+
+    background-image: url("../img/comments__background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 
     &__video {
       width: 723px;
       height: 407px;
+      margin-bottom: 70px;
 
       background-image: url("../img/comments__video-poster--tablet.jpg");
     }
@@ -38,6 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .comments {
+    margin-bottom: 100px;
     padding-top: 50px;
 
     &__title {

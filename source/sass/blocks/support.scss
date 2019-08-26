@@ -1,10 +1,13 @@
 .support {
+  padding-top: 83px;
+  padding-bottom: 115px;
+
   color: #ffffff;
 
   background-color: #625454;
   background-image: url("../img/support__background--mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 
   &__title {
     margin: 0;
@@ -20,5 +23,35 @@
     margin-bottom: 38px;
 
     line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .support {
+    padding-top: 72px;
+    padding-bottom: 126px;
+
+    background-image: url("../img/support__background--tablet.jpg");
+
+    &__container {
+      width: 412px;
+    }
+
+    &__title {
+      font-size: 65px;
+    }
+
+    &__description {
+      margin-bottom: 46px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .support {
+    padding-top: 192px;
+    padding-bottom: 206px;
+
+    background-image: url("../img/support__background--desktop.jpg");
   }
 }

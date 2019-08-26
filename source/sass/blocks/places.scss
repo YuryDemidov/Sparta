@@ -4,7 +4,6 @@
   &__title {
     z-index: 1;
 
-    margin-top: 0;
     margin-bottom: 32px;
     padding: 0 4%;
     border-bottom: 10px solid transparent;
@@ -36,5 +35,60 @@
     left: -437px;
 
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .places {
+
+
+    &__title {
+      padding-top: 10px;
+      padding-bottom: 22px;
+    }
+
+    &__map-wrapper {
+      height: 605px;
+    }
+
+    &__map {
+      top: -54px;
+      left: -114px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .places {
+
+
+    &__title {
+      padding-top: 10px;
+      padding-bottom: 22px;
+    }
+
+    &__map-wrapper {
+      height: 605px;
+    }
+
+    &__map {
+      top: -54px;
+      left: -114px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .places {
+
+
+    &__map-wrapper {
+      height: 620px;
+    }
+
+    &__map {
+      top: -41px;
+      left: -378px;
+    }
   }
 }

@@ -30,13 +30,16 @@
     background-repeat: repeat-x;
     background-size: 6px 1px;
 
-    &:hover {
-      background-image: linear-gradient(to right, $main-text-color, $main-text-color 100%);
-    }
-
+    &:hover,
     &:focus {
       outline: none;
-      background-image: linear-gradient(to right, $bright-color, $bright-color 100%);
+
+      color: $bright-color;
+      background-image: linear-gradient(to right, $bright-color, $bright-color 66%, transparent 66%);
+    }
+
+    &:hover::before {
+      border-color: $bright-color;
     }
   }
 
@@ -51,5 +54,39 @@
     bottom: 0;
 
     font-weight: bold;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 2.5%;
+    padding-bottom: 50px;
+    padding-left: 2.5%;
+
+    &__phone {
+      order: 3;
+      margin: 0;
+    }
+
+    &__privacy-policy {
+      order: 2;
+    }
+
+    &__logo {
+      order: 1;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-right: 1.5%;
+    padding-bottom: 21px;
+    padding-left: 1.5%;
   }
 }

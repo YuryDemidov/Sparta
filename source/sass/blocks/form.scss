@@ -41,3 +41,33 @@
     padding-bottom: 30px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+
+
+    &__input {
+      margin-bottom: 22px;
+    }
+
+    &__btn {
+      width: 360px;
+      margin-top: 32px;
+      padding-top: 15px;
+
+      background-image: url("../img/form__button.png");
+
+      transform: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-image: url("../img/form__button--active.png");
+      }
+
+      &:active {
+        padding-top: 16px;
+      }
+    }
+  }
+}

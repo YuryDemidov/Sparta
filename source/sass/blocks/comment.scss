@@ -1,11 +1,12 @@
 .comment {
   z-index: 1;
 
-  padding-bottom: 15px;
-
-  text-align: center;
+  padding-bottom: 65px;
   border: 14px solid transparent;
 
+  text-align: center;
+
+  background-color: #ffffff;
   border-image-source: url("../img/comment__border-image.png");
   border-image-slice: 30;
   border-image-outset: 22px;
@@ -14,6 +15,8 @@
   box-shadow: 0 9px 76px 20px rgba(0,0,0,.1);
 
   &__author-photo {
+    width: 117px;
+    height: 156px;
     margin-top: 12px;
     margin-bottom: 25px;
   }
@@ -33,10 +36,14 @@
     line-height: 24px;
   }
 
+  &__hidden {
+    display: none;
+  }
+
   &__show {
     position: relative;
 
-    margin-bottom: 42px;
+    margin-bottom: 14px;
     padding: 0;
     padding-right: 20px;
     border: none;
@@ -67,13 +74,60 @@
       transform: rotate(45deg);
     }
 
-    &:hover {
-      background-image: linear-gradient(to right, $main-text-color, $main-text-color 100%);
-    }
-
+    &:hover,
     &:focus {
       outline: none;
-      background-image: linear-gradient(to right, $bright-color, $bright-color 100%);
+
+      color: $bright-color;
+      background-image: linear-gradient(to right, $bright-color, $bright-color 66%, transparent 66%);
+    }
+
+    &:hover::before {
+      border-color: $bright-color;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    display: flex;
+    padding: 0 4%;
+    padding-top: 35px;
+    padding-bottom: 98px;
+
+    text-align: left;
+
+    border-image-outset: 10px;
+    border-image-width: 15px;
+
+    &__author-photo {
+      flex-shrink: 0;
+      width: 145px;
+      height: 193px;
+      margin: 0;
+      margin-right: 24px;
+    }
+
+    &__hidden--tablet {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    padding: 0 6%;
+    padding-top: 58px;
+    padding-bottom: 100px;
+
+    &__author-photo {
+      width: 199px;
+      height: 265px;
+      margin-right: 47px;
+    }
+
+    &__hidden--desktop {
+      display: inline;
     }
   }
 }

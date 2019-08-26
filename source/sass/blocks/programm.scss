@@ -125,9 +125,9 @@
       justify-content: space-between;
       align-items: flex-start;
       padding-top: 128px;
-      padding-right: 13%;
+      padding-right: 12.5%;
       padding-bottom: 75px;
-      padding-left: 13%;
+      padding-left: 12.5%;
     }
 
     &__list {
@@ -140,13 +140,13 @@
 
     &__call {
       margin-top: 54px;
+      margin-right: 0;
 
       font-size: 87px;
     }
 
     &__button {
       align-self: center;
-      margin-right: 25px;
     }
   }
 }
