@@ -47,3 +47,34 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
+
+/*Скрипт отвечает за открытие и закрытие pop-up'а*/
+
+var popUp = document.querySelector('.pop-up');
+var openButton = document.querySelectorAll('a.button');
+var closeButton = document.querySelector('.pop-up__close');
+var closeArea = document.querySelector('.pop-up__back');
+var nameInput = document.querySelector('#popup-name-id');
+
+for (var i = 0; i <= openButton.length - 1; i++) {
+  openButton[i].addEventListener('click', function(){
+    event.preventDefault();
+    popUp.classList.add('pop-up--visible');
+    nameInput.focus();
+  });
+}
+
+closeButton.addEventListener('click', function(event) {
+  popUp.classList.remove('pop-up--visible');
+});
+closeArea.addEventListener('click', function(event) {
+  popUp.classList.remove('pop-up--visible');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.code == 'Escape') {
+    if (popUp.classList.contains('pop-up--visible')) {
+      popUp.classList.remove('pop-up--visible');
+    }
+  }
+});
