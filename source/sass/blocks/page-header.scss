@@ -4,10 +4,18 @@
   color: #ffffff;
 
   background-color: #915960;
-  background-image: url("../img/page-header__background--mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image:
+    url("../img/page-header__background--border.png"),
+    url("../img/page-header__background--mobile.jpg");
+  background-repeat:
+    repeat-x,
+    no-repeat;
+  background-position:
+    center bottom,
+    center;
+  background-size:
+    auto,
+    cover;
 
   &__top {
     display: flex;
@@ -98,7 +106,9 @@
   .page-header {
     padding-bottom: 160px;
 
-    background-image: url("../img/page-header__background--tablet.jpg");
+    background-image:
+      url("../img/page-header__background--border.png"),
+      url("../img/page-header__background--tablet.jpg");
 
     &__top {
       padding-top: 12px;

@@ -205,19 +205,19 @@
     <section class="tour-photo-slider">
       <button class="tour-photo-slider__button tour-photo-slider__button--previous" onclick="minusSlide()"><span class="visually-hidden">previous</span></button>
       <picture>
-        <source type="image/webp" media="(min-width: 1170px)" srcset="img/tour-photo-slider--desktop.webp">
+        <source media="(min-width: 1170px)" srcset="img/tour-photo-slider--desktop.webp" type="image/webp">
         <source media="(min-width: 1170px)" srcset="img/tour-photo-slider--desktop.jpg">
-        <source type="image/webp" media="(min-width: 750px)" srcset="img/tour-photo-slider--tablet.webp">
+        <source media="(min-width: 750px)" srcset="img/tour-photo-slider--tablet.webp" type="image/webp">
         <source media="(min-width: 750px)" srcset="img/tour-photo-slider--tablet.jpg">
-        <source type="image/webp" media="(min-width: 320px)" srcset="img/tour-photo-slider--slide-1.webp">
+        <source media="(min-width: 320px)" srcset="img/tour-photo-slider--slide-1.webp" type="image/webp">
         <img style="display: block;" class="tour-photo-slider__photo tour-photo-slider__photo--1" src="img/tour-photo-slider--slide-1.jpg" alt="">
       </picture>
       <picture>
-        <source type="image/webp" srcset="img/tour-photo-slider--slide-2.webp">
+        <source srcset="img/tour-photo-slider--slide-2.webp" type="image/webp">
         <img style="display: none;" class="tour-photo-slider__photo tour-photo-slider__photo--2" src="img/tour-photo-slider--slide-2.jpg" alt="">
       </picture>
       <picture>
-        <source type="image/webp" srcset="img/tour-photo-slider--slide-3.webp">
+        <source srcset="img/tour-photo-slider--slide-3.webp" type="image/webp">
         <img style="display: none;" class="tour-photo-slider__photo tour-photo-slider__photo--3" src="img/tour-photo-slider--slide-3.jpg" alt="">
       </picture>
       <button class="tour-photo-slider__button tour-photo-slider__button--next" onclick="plusSlide()"><span class="visually-hidden">next</span></button>
@@ -225,7 +225,10 @@
     <section class="page-content__instructor instructor">
       <h2 class="instructor__title title">Инструктор</h2>
       <div class="container instructor__container">
-        <img class="instructor__photo" src="img/instructor__photo.jpg" alt="Инструктор Роман Попков" width="290" height="290">
+        <picture>
+          <source srcset="img/instructor__photo.webp" type="image/webp">
+          <img class="instructor__photo" src="img/instructor__photo.jpg" alt="Инструктор Роман Попков" width="290" height="290">
+        </picture>
         <p class="instructor__name">Роман Попков</p>
         <div class="instructor__dignities">
           <ul class="instructor__dignities-list instructor__dignities-list--left">
@@ -274,7 +277,10 @@
       <div class="container comments__container">
         <video class="comments__video" src="video/comments__video.mp4" poster="img/comments__video-poster--transparent.png" width="292" height="164"></video>
         <div class="comments__comment comment">
-          <img class="comment__author-photo" src="img/comment__author.jpg" alt="Дмитрий Весна">
+          <picture>
+            <source srcset="img/comment__author.webp" type="image/webp">
+            <img class="comment__author-photo" src="img/comment__author.jpg" alt="Дмитрий Весна">
+          </picture>
           <div class="comment__content">
             <p class="comment__author-name">Дмитрий Весна</p>
             <div class="comment__text">
@@ -310,6 +316,21 @@
           <input class="form__input" type="tel" name="phone" id="phone-id" placeholder="Телефон" pattern="^[0-9-+\s]+$" value="" required>
           <button class="form__btn button" type="submit">Отправить</button>
         </form>
+      </div>
+    </section>
+    <section class="pop-up">
+      <div class="pop-up__wrapper">
+        <div class="pop-up__back"></div>
+        <div class="pop-up__container">
+          <button class="pop-up__close" type="button" title="Закрыть">Закрыть</button>
+          <h2 class="pop-up__title">Попробуй выжить</h2>
+          <p class="pop-up__text">Оставь свой номер телефона, наши менеджеры свяжутся с тобой для подтверждения заявки</p>
+          <form class="pop-up__form form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="form__input" type="text" name="name" id="popup-name-id" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" value="" required>
+            <input class="form__input" type="tel" name="phone" id="popup-phone-id" placeholder="Телефон" pattern="^[0-9-+\s]+$" value="" required>
+            <button class="form__btn button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

@@ -26,9 +26,18 @@
     padding-left: 20px;
     min-height: 257px;
 
-    background-image: url("../img/experience__photo--mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image:
+      url("../img/experience__photo--border.png"),
+      url("../img/experience__photo--mobile.png");
+    background-position:
+      center bottom -5px,
+      0 0;
+    background-repeat:
+      repeat-x,
+      no-repeat;
+    background-size:
+      auto,
+      cover;
   }
 
   &__title {
@@ -147,6 +156,9 @@
       margin-right: 18px;
 
       background-image: url("../img/experience__photo--tablet.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     &__title {
