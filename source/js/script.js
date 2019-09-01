@@ -78,3 +78,16 @@ window.addEventListener('keydown', function(event) {
     }
   }
 });
+
+/*Скрипт отвечает за появление полного текста комментария
+и удаление кнопки «Читать весь отзыв»*/
+
+var hiddenText = document.querySelectorAll('.comment__hidden');
+var buttonFullComment = document.querySelector('.comment__show');
+
+buttonFullComment.addEventListener('click', function() {
+  for (var i = 0; i < hiddenText.length; i++) {
+    hiddenText[i].classList.remove('comment__hidden');
+  }
+  buttonFullComment.style = "display: none;";
+});
