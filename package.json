@@ -1,21 +1,21 @@
 {
   "name": "sparta",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "browser-sync": "^2.26.7",
-    "del": "^5.0.0",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-posthtml": "^3.0.4",
+    "gulp-posthtml": "^3.0.5",
     "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "node-sass": "^4.13.1",
-    "posthtml-include": "^1.2.0",
+    "node-sass": "^4.14.1",
+    "posthtml-include": "^1.4.3",
     "run-sequence": "^2.2.1"
   },
   "scripts": {
