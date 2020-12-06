@@ -6,6 +6,7 @@ var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var del = require("del");
+var imageResize = require('gulp-image-resize');
 var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -27,11 +28,21 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 
+gulp.task("resize", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(imageResize({
+      width : 700,
+      imageMagick: true
+    }))
+    .pipe(rename(function (path) { path.basename += "@1x"; }))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({quality: 85, progressive: true}),
+      imagemin.mozjpeg({quality: 80, progressive: true}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
