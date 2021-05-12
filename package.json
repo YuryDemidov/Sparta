@@ -16,7 +16,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "node-sass": "^5.0.0",
-    "postcss": "^8.1.6",
+    "postcss": "^8.2.10",
     "posthtml-include": "^1.5.0",
     "run-sequence": "^2.2.1"
   },
